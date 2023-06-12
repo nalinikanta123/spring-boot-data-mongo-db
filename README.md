@@ -100,3 +100,29 @@ deleteTutorial(): delete a Tutorial document with given id
 deleteAllTutorials(): remove all documents in tutorials collection
 The operations is done with the help of MongoRepository’s deleteById() and deleteAll() method.
 ```
+```
+Request:POST http://localhost:8080/api/tutorials
+{
+    "title":"harryporter",
+    "description":"magic of azbekustan"
+}
+
+Response:
+{
+    "id": "64873c5e0b917f2df99499ae",
+    "title": "harryporter",
+    "description": "magic of azbekustan",
+    "published": false
+}
+```
+```
+Request:GET http://localhost:8080/api/tutorials
+
+Response:
+{
+    "id": "64873c5e0b917f2df99499ae",
+    "title": "harryporter",
+    "description": "magic of azbekustan",
+    "published": false
+}
+```
